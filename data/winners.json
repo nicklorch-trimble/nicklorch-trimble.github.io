@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "event": "n8n-challenge",
+    "year": 2025,
+    "generatedAt": "2025-10-15T00:00:00.000Z"
+  },
+  "winners": [
+    {
+      "id": "team-alpha",
+      "teamName": "Team Alpha",
+      "members": ["Alice", "Bob"],
+      "award": "Grand Prize",
+      "rank": 1,
+      "description": "Automated data sync across multiple SaaS platforms with error remediation.",
+      "workflow": "{\"nodes\":[{\"name\":\"Start\",\"type\":\"n8n-nodes-base.manualTrigger\",\"position\":[300,300],\"parameters\":{}},{\"name\":\"Alpha Logic\",\"type\":\"n8n-nodes-base.code\",\"position\":[600,300],\"parameters\":{\"language\":\"JavaScript\",\"code\":\"// process stuff\\nreturn [{ json: { ok: true } }];\"}}],\"connections\":{\"Start\":{\"main\":[[{\"node\":\"Alpha Logic\",\"type\":\"main\",\"index\":0}]]}}}"
+    },
+    {
+      "id": "team-beta",
+      "teamName": "Beta Builders",
+      "members": ["Carlos", "Dana", "Eve"],
+      "award": "Runner Up",
+      "rank": 2,
+      "description": "Real‑time sentiment analysis pipeline feeding dashboards.",
+      "workflow": "{\"nodes\":[{\"name\":\"Webhook\",\"type\":\"n8n-nodes-base.webhook\",\"position\":[300,500],\"parameters\":{\"path\":\"beta\",\"httpMethod\":\"POST\"}}],\"connections\":{}}"
+    }
+  ],
+  "honorableMentions": [
+    {
+      "id": "hm-gamma",
+      "teamName": "Gamma Group",
+      "members": ["Faythe"],
+      "description": "Creative use of AI to classify support tickets.",
+      "workflow": "{\"nodes\":[{\"name\":\"Trigger\",\"type\":\"n8n-nodes-base.manualTrigger\",\"position\":[300,700],\"parameters\":{}}],\"connections\":{}}"
+    }
+  ]
+}
